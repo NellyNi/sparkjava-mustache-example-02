@@ -30,7 +30,7 @@ public class SparkMustacheDemo02 {
         port(getHerokuAssignedPort());
 		
 		Map map = new HashMap();
-        map.put("name", "Sam");
+        map.put("name", "Fuheng");
 		
         // hello.mustache file is in resources/templates directory
         get("/", (rq, rs) -> new ModelAndView(map, "hello.mustache"), new MustacheTemplateEngine());
